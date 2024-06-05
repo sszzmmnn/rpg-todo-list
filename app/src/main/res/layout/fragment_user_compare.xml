@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.UserCompareFragment" >
+
+    <TextView
+        android:id="@+id/userNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Name: -"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/userAvailablePtsTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Available points: "
+        app:layout_constraintStart_toStartOf="@+id/userNameTextView"
+        app:layout_constraintTop_toBottomOf="@+id/userNameTextView" />
+
+    <TextView
+        android:id="@+id/userStrTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Strength: "
+        app:layout_constraintStart_toStartOf="@+id/userAvailablePtsTextView"
+        app:layout_constraintTop_toBottomOf="@+id/userAvailablePtsTextView" />
+
+    <TextView
+        android:id="@+id/userAgilityTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Agility: "
+        app:layout_constraintStart_toStartOf="@+id/userStrTextView"
+        app:layout_constraintTop_toBottomOf="@+id/userStrTextView" />
+
+    <TextView
+        android:id="@+id/userIntlTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Intelligence: "
+        app:layout_constraintStart_toStartOf="@+id/userAgilityTextView"
+        app:layout_constraintTop_toBottomOf="@+id/userAgilityTextView" />
+
+    <TextView
+        android:id="@+id/userEnemyTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Current enemy: "
+        app:layout_constraintStart_toStartOf="@+id/userIntlTextView"
+        app:layout_constraintTop_toBottomOf="@+id/userIntlTextView" />
+
+    <TextView
+        android:id="@+id/userKillCountTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kill Count: "
+        app:layout_constraintStart_toStartOf="@+id/userEnemyTextView"
+        app:layout_constraintTop_toBottomOf="@+id/userEnemyTextView" />
+</androidx.constraintlayout.widget.ConstraintLayout>
